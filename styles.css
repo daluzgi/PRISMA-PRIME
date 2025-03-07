@@ -103,12 +103,12 @@ body {
 /* Responsive Hero Section */
 @media (max-width: 768px) {
     .hero {
-        height: 70vh;
+        height: 75vh;
         padding: 10px;
     }
     .hero img {
         height: auto;
-        max-height: 400px;
+        max-height: 450px;
     }
     .hero-content {
         width: 95%;
@@ -125,7 +125,8 @@ body {
 /* Products Section */
 .products {
     text-align: center;
-    padding: 50px 20px;
+    padding: 30px 20px;
+    margin-top: -30px; /* Reduce el espacio entre hero y productos en móviles */
 }
 
 .products h2 {

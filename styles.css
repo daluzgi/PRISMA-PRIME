@@ -6,6 +6,7 @@ body {
     background: #f8f8f8;
     color: #333;
     text-align: center;
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
 }
 
 /* Navbar */
@@ -15,6 +16,8 @@ body {
     align-items: center;
     padding: 15px 10%;
     background: #0077B5;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .navbar .logo img {
@@ -45,7 +48,7 @@ body {
 .hero {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,6 +56,7 @@ body {
     overflow: hidden;
     text-align: center;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 .hero img {
@@ -103,12 +107,12 @@ body {
 /* Responsive Hero Section */
 @media (max-width: 768px) {
     .hero {
-        height: 75vh;
+        height: 60vh;
         padding: 10px;
     }
     .hero img {
         height: auto;
-        max-height: 450px;
+        max-height: 400px;
     }
     .hero-content {
         width: 95%;
@@ -125,8 +129,9 @@ body {
 /* Products Section */
 .products {
     text-align: center;
-    padding: 30px 20px;
-    margin-top: -30px; /* Reduce el espacio entre hero y productos en móviles */
+    padding: 20px 20px;
+    margin-top: -50px; /* Reduce más el espacio entre hero y productos */
+    box-sizing: border-box;
 }
 
 .products h2 {
